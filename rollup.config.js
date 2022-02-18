@@ -60,6 +60,7 @@ function createESMConfig(input, output) {
       nodeResolvePlugin({ extensions }),
       esbuildPlugin({
         minify: false,
+        target: 'es2016',
         tsconfig: path.resolve('./tsconfig.json'),
       }),
     ],
